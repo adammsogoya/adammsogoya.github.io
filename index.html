@@ -92,42 +92,40 @@
             line-height: 1.6;
         }
 
+        /* Classy Icon Action Buttons */
         .cta-buttons {
             display: flex;
             justify-content: center;
             gap: 16px;
+            margin-top: 24px;
         }
 
-        .btn-apple {
+        .btn-icon-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #f5f5f7;
+            padding: 10px 24px;
+            border-radius: 980px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .btn-icon-pill:hover {
             background-color: #0071e3;
+            border-color: #0071e3;
             color: #ffffff;
-            padding: 10px 22px;
-            border-radius: 980px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 400;
-            transition: background 0.3s;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 113, 227, 0.3);
         }
 
-        .btn-apple:hover {
-            background-color: #0077ed;
-        }
-
-        .btn-apple-outline {
-            background-color: transparent;
-            border: 1px solid #2997ff;
-            color: #2997ff;
-            padding: 10px 22px;
-            border-radius: 980px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 400;
-            transition: all 0.3s;
-        }
-
-        .btn-apple-outline:hover {
-            background-color: #2997ff;
-            color: #ffffff;
+        .btn-icon-pill span.icon {
+            font-size: 1.1rem;
         }
 
         /* Product Showcase Cards */
@@ -290,12 +288,16 @@
             Combining technical precision in English and Swahili Large Language Model (LLM) fine-tuning with advanced enterprise operations, Odoo ERP management, and multi-disciplinary expertise across finance and emerging technologies.
         </p>
         <div class="cta-buttons">
-            <a href="mailto:adammsogoya2@gmail.com" class="btn-apple">Get in Touch</a>
-            <a href="tel:+255767000630" class="btn-apple-outline">Call Me</a>
+            <a href="mailto:adammsogoya2@gmail.com" class="btn-icon-pill">
+                <span class="icon">✉️</span> Mail Me
+            </a>
+            <a href="tel:+255767000630" class="btn-icon-pill">
+                <span class="icon">📞</span> Call Me
+            </a>
         </div>
     </section>
 
-    <!-- Product Showcase Cards -->
+    <!-- Project Showcase Cards -->
     <div class="showcase-container" id="projects">
         
         <!-- Showcase 1 -->
@@ -400,7 +402,7 @@
 
     <!-- Footer -->
     <footer id="contact">
-        <p>Tanzania</p>
+        <p>Location: Tanzania • Phone: +255 767 000 630 • Email: adammsogoya2@gmail.com</p>
         <p>Copyright © 2026 Adam Malcous Msogoya. All rights reserved.</p>
     </footer>
 
